@@ -1,3 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Superhero Creation</title>
+  </head>
+  <body>
+    <h1>Create a Team and Heroes!</h1>
+    <form method="post" action="/teams">
+    Team Name: <input id="team_name" type="string" name="team[name]">
+    Team Motto: <input id="team_motto" type="string" name="team[motto]">
+
+    <h1>Hero 1</h2>
+      Hero's Name: <input id="member1_name" type="string" name="team[members][][name]">
+      Hero's Power: <input id="member1_power" type="string" name="team[members[][power]">
+      Hero's Biography: <input id="member1_bio" type="string" name="team[members[][bio]">
+
+    <h1>Hero 2</h1>
+      Hero's Name: <input id="member2_name" type="string" name="team[members][][name]">
+      Hero's Power: <input id="member2_power" type="string" name="team[members[][power]">
+      Hero's Biography: <input id="member2_bio" type="string" name="team[members[][bio]">
+
+    <h1>Hero 3</h1>
+      Hero's Name: <input id="member3_name" type="string" name="team[members][][name]">
+      Hero's Power: <input id="member3_power" type="string" name="team[members[][power]">
+      Hero's Biography: <input id="member3_bio" type="string" name="team[members[][bio]">
+
+    <input type="submit" id="submit">
 
 
-
+  </body>
+</html>
